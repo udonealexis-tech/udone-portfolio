@@ -75,4 +75,6 @@ HTML :
 
 3 - React-Icons : npm i react-icons
 
+4 - Framer-motion : npm i framer-motion
+
 
