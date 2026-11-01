@@ -15,7 +15,7 @@ const App = () => {
     });
     document.documentElement.classList.add('dark');
   }, []);
-  useEffect(() => {
+  useEffect(() => {git qq
     AOS.refresh()
   }, [darkMode])
 

@@ -22,13 +22,9 @@ const Hero = () => {
                 <div className='relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96'>
                   <img src={logo} alt='logo' className='w-full h-full object-cover rounded-full relative z-10 transform group-hover:scale-105 transition-transform duration-500' />
                 </div>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
     </section>
   )
