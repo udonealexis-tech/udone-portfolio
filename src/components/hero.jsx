@@ -1,6 +1,8 @@
 import React from 'react'
 import { FaGithub, FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa'
 import logo from '../assets/LoGo-UDOne.png'
+import CV from '../assets/CV.pdf'
+import { DownloadIcon, Mail } from 'lucide-react'
 
 const Hero = () => {
 
@@ -16,7 +18,7 @@ const Hero = () => {
       id="home"
       className="min-h-screen flex items-center relative overflow-hidden"
     >
-      <div className="container mx-auto px-4 sm:px-8 lg:px-14 py-12 lg:-mt-14 relative z-10">
+      <div className="container mx-auto px-4 sm:px-8 lg:px-14 py-22 lg:py-12 lg:-mt-14 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
           <div
             className="lg:w-2/5 w-full flex justify-center"
@@ -46,9 +48,51 @@ const Hero = () => {
                 Available for work
               </span>
             </div>
-            <h1 className='text-4xl sm:text-5xl lg:text-6xl font-bold mb-3 dark:text-white text-gray-900'>
-              Bienvenue, je suis <span>Danylex</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-3 dark:text-white text-gray-900">
+              Bienvenue, je suis{" "}
+              <span className="text-red-600 dark:text-red-420">Danylex</span>
             </h1>
+            <h2 className="text-xl sm:text-2xl font-mono mb-4 dark:text-red-400 text-red-600">
+              <span className="text-gray-400 dark:text-gray-500">&lt; </span>
+              Développeur Web
+              <span className="text-gray-400 dark:text-gray-500"> &gt;</span>
+            </h2>
+            <p className="mb-6 leading-relaxed max-w-md lg:max-w-lg dark:text-gray-300 text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              earum saepe corporis sequi fugiat.
+            </p>
+            {/* Statistiques */}
+            <div className="flex gap-8 mb-7">
+              {[
+                { number: "2+", label: "Years Experience" },
+                { number: "15+", label: "Projects Done" },
+                { number: "10+", label: "Happy Clients" },
+              ].map((stat, index) => (
+                <div key={index} className="text-center">
+                  <div className="text-2xl font-bold dark:text-white text-gray-900">
+                    {stat.number}
+                  </div>
+                  <div className="text-xs dark:text-gray-400 text-gray-600">
+                    {stat.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+            {/* Nouvelle Etape */}
+            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+              <a href={CV} download className="w-full sm:w-auto">
+                <button className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full border-2 dark:border-red-500 border-red-600 dark:text-white text-gray-800 font-semibold dark:hover: bg-red-500 hover:bg-red-600 to-red-800 hover:shadow-[0_0_40px_rgba(220,38,38,0.7)] transition-all duration-300 transform hover:scale-105">
+                  <DownloadIcon size={18} />
+                  Download CV
+                </button>
+              </a>
+              <a href='#contact' className="w-full sm:w-auto">
+                <button className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full border-2 dark:border-red-500 border-red-600 dark:text-white text-gray-800 hover:text-white dark:hover:text-white font-semibold dark:hover:bg-red-500 hover:bg-red-600 hover:shadow-[0_0_40px_rgba(220,38,38,0.7)] transition-all duration-300 transform hover:scale-105">
+                  <Mail size={18} />
+                  Hire Me
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
