@@ -74,22 +74,26 @@ const About = () => {
           </div>
           <a href="#contact" data-aos="fade-up" data-aos-delay="300">
             <button className="group inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full border-2 dark:border-red-500 border-red-600 dark:text-white text-gray-800 font-semibold dark:hover: bg-red-500 hover:bg-red-600 to-red-800 hover:shadow-[0_0_40px_rgba(220,38,38,0.7)] transition-all duration-300 transform hover:scale-105">
-              <ArrowRight size={18} />
               Let's Talk
+              <ArrowRight size={18} />
             </button>
           </a>
+          </div>
           <div
             className="relative order-1 lg:order-2 flex justify-center"
             data-aos="fade-left"
           >
             <div className="relative w-full max-w-sm sm:max-w-md">
               <div className="absolute inset-0 bg-linear-to-r from-red-600 to-red-800 rounded-[40%_60%_60%/40%_60%_70%] filter blur-xl opacity-40 animate-pulse" />
-              <div className="absolute inset-0 bg-linear-to-r from-red-600 to-red-800 rounded-[40%_60%_60%/40%_60%_70%] transform rotate-3 scale-105" />              
-              <img src={logo} alt='About' className="relative z-10 rounded-[40%_60%_60%/40%_60%_70%] shadow-2xl w-full h-auto object-cover border-2 border-red-500/30 backdrop-blur-sm" />
+              <div className="absolute inset-0 bg-linear-to-r from-red-600 to-red-800 rounded-[40%_60%_60%/40%_60%_70%] transform rotate-3 scale-105" />
+              <img
+                src={logo}
+                alt="About"
+                className="relative z-10 rounded-[40%_60%_60%/40%_60%_70%] shadow-2xl w-full h-auto object-cover border-2 border-red-500/30 backdrop-blur-sm"
+              />
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 }
