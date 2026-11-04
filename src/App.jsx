@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
+import Certificates from './components/Certificates';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true)
@@ -41,6 +42,8 @@ const App = () => {
       <About />
 
       <Skills />
+
+      <Certificates />
 
     </div>
   );
