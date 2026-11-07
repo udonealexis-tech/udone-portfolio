@@ -118,8 +118,8 @@ const Project = () => {
           {infiniteProjects.map((project, index) => (
             <div
               key={`${project.id}-${index}`}
-              className="w-full md,w-[calc(50%-12px)] lg:w-[calc(33.333%-16px shrink-0 snap-start group rounded-3xl overflow-hidden border-2 transition-all duration-300 dark:border-zinc-800/60 border-gray--100
-                dark:bg-zinc-900/40 bg-white hover:border-red-500/50 adark:hover:border-red-500/50 hover:shadow-[0_20px_40px_rgba(220,38,,38,0.5)]) flex flex-col"
+              className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] shrink-0 snap-start group rounded-3xl overflow-hidden border-2 transition-all duration-300 dark:border-zinc-800/60 border-gray-100
+                dark:bg-zinc-900/40 bg-white hover:border-red-500/50 dark:hover:border-red-500/50 hover:shadow-[0_20px_40px_rgba(220,38,38,0.5)] flex flex-col"
             >
               <div className="relative overflow-hidden aspect-video bg-gray-100 dark:bg-zinc-900">
                 <img
