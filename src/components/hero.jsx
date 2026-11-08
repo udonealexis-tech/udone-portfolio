@@ -1,11 +1,10 @@
-import React from 'react'
-import { FaGithub, FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa'
-import logo from '../assets/LoGo-UDOne.png'
-import CV from '../assets/CV.pdf'
-import { DownloadIcon, Mail } from 'lucide-react'
+import React from "react";
+import { FaGithub, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
+import logo from "../assets/LoGo-UDOne.png";
+import CV from "../assets/CV.pdf";
+import { DownloadIcon, Mail } from "lucide-react";
 
 const Hero = () => {
-
   const socialIcons = [
     { icon: FaInstagram, alt: "Instagram", link: "#" },
     { icon: FaTiktok, alt: "Tiktok", link: "#" },
@@ -86,7 +85,7 @@ const Hero = () => {
                   Download CV
                 </button>
               </a>
-              <a href='#contact' className="w-full sm:w-auto">
+              <a href="#contact" className="w-full sm:w-auto">
                 <button className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full border-2 dark:border-red-500 border-red-600 dark:text-white text-gray-800 hover:text-white dark:hover:text-white font-semibold dark:hover:bg-red-500 hover:bg-red-600 hover:shadow-[0_0_40px_rgba(220,38,38,0.7)] transition-all duration-300 transform hover:scale-105">
                   <Mail size={18} />
                   Hire Me
@@ -98,5 +97,5 @@ const Hero = () => {
       </div>
     </section>
   );
-}
-export default Hero
+};
+export default Hero;
