@@ -19,12 +19,12 @@ const Contact = () => {
           >
             <input
               type="text"
-              placeholder='Name'
+              placeholder="Name"
               className="w-full px-5 py-4 rounded-xl border outline-hidden text-base transition-all dark:border-zinc-800 border-gray-200 dark:bg-zinc-900/60 bg-white dark:text-white text-gray-800 focus:border-red-500 dark:focus:border-red-400"
             />
             <input
               type="email"
-              placeholder='Email'
+              placeholder="Email"
               className="w-full px-5 py-4 rounded-xl border outline-hidden text-base transition-all dark:border-zinc-800 border-gray-200 dark:bg-zinc-900/60 bg-white dark:text-white text-gray-800 focus:border-red-500 dark:focus:border-red-400"
               required
               data-aos="fade-up"
@@ -32,7 +32,7 @@ const Contact = () => {
             />
 
             <textarea
-              placeholder='Message'
+              placeholder="Message"
               rows={4}
               className="w-full px-5 py-4 rounded-xl border outline-hidden text-base transition-all dark:border-zinc-800 border-gray-200 dark:bg-zinc-900/60 bg-white dark:text-white text-gray-800 focus:border-red-500 dark:focus:border-red-400"
               required
@@ -42,23 +42,28 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-white font-medium text-base bg-red-600 hover:bg-red-700 acrive:scale-98 transition-all cursor-pointer w-full sm:w-fit"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-white font-medium text-base bg-red-600 hover:bg-red-700 active:scale-98 transition-all cursor-pointer w-full sm:w-fit"
               data-aos="fade-up"
               data-aos-delay="300"
             >
-                <Send size={18} />
+              <Send size={18} />
               Send Message
             </button>
           </form>
-          <div className="flex justify-center w-full relative order-1 lg:order-2"
-            data-aos="fade-left">
+          <div
+            className="flex justify-center w-full relative order-1 lg:order-2"
+            data-aos="fade-left"
+          >
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <div className="w-75 h-90 rounded-full bg-red-400/65 dark:bg-red-500/40 blur-3xl scale-220" />
-                <img src={contactImg} alt="Contact" className="w-96 hh-110 object-cover rounded-3xl relative z-10" />
-            </div>
+              <div className="w-75 h-90 rounded-full bg-red-400/65 dark:bg-red-500/40 blur-3xl scale-110" /></div>
+                <img
+                    src={contactImg}
+                    alt="Contact"
+                    className="w-96 h-110 object-cover rounded-3xl relative z-10"
+                />
+             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 }
