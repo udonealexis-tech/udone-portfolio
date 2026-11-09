@@ -8,7 +8,8 @@ const Contact = () => {
       <div className="container mx-auto px-6 max-w-6xl relative z-10">
         <div className="text-center mb-6" data-aos="fade-up">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold dark:text-white text-gray-900">
-            Get In <span className="text-red-500 dark:text-red-400">Touch</span>
+            Entrer en{" "}
+            <span className="text-red-500 dark:text-red-400">Contact</span>
           </h2>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -19,7 +20,7 @@ const Contact = () => {
           >
             <input
               type="text"
-              placeholder="Name"
+              placeholder="Nom"
               className="w-full px-5 py-4 rounded-xl border outline-hidden text-base transition-all dark:border-zinc-800 border-gray-200 dark:bg-zinc-900/60 bg-white dark:text-white text-gray-800 focus:border-red-500 dark:focus:border-red-400"
             />
             <input
@@ -47,7 +48,7 @@ const Contact = () => {
               data-aos-delay="300"
             >
               <Send size={18} />
-              Send Message
+              Envoyer un message
             </button>
           </form>
           <div
@@ -55,15 +56,16 @@ const Contact = () => {
             data-aos="fade-left"
           >
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <div className="w-75 h-90 rounded-full bg-red-400/65 dark:bg-red-500/40 blur-3xl scale-110" /></div>
-                <img
-                    src={contactImg}
-                    alt="Contact"
-                    className="w-96 h-110 object-cover rounded-3xl relative z-10"
-                />
-             </div>
+              <div className="w-75 h-90 rounded-full bg-red-400/65 dark:bg-red-500/40 blur-3xl scale-110" />
+            </div>
+            <img
+              src={contactImg}
+              alt="Contact"
+              className="w-98 h-110 object-cover rounded-3xl relative z-10"
+            />
           </div>
         </div>
+      </div>
     </section>
   );
 }

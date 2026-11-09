@@ -29,30 +29,30 @@ const Certificates = () => {
     const certificate = [
       {
         id: 1,
-        title: "Frontend Development",
-        issuer: "Meta",
-        date: "2023",
+        title: "Designer Web",
+        issuer: "AECD",
+        date: "2022",
         credentialUrl: "#",
       },
       {
         id: 2,
-        title: "Frontend Development",
-        issuer: "Meta",
-        date: "2024",
+        title: "Web Expert",
+        issuer: "ADF Formation",
+        date: "2006",
         credentialUrl: "#",
       },
       {
         id: 3,
-        title: "Frontend Development",
-        issuer: "Meta",
-        date: "2025",
+        title: "Web designer",
+        issuer: "AHPM",
+        date: "2005",
         credentialUrl: "#",
       },
       {
         id: 4,
-        title: "Frontend Development",
-        issuer: "Meta",
-        date: "2026",
+        title: "Communication graphique et numérique",
+        issuer: "Formasup'82",
+        date: "2002",
         credentialUrl: "#",
       },      
     ];
@@ -89,49 +89,56 @@ const Certificates = () => {
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold dark:text-white text-gray-900">
-              My <span className="text-red-500 dark:text-red-400">Certificates</span>
+              Mes{" "}
+              <span className="text-red-500 dark:text-red-400">
+                Certificats
+              </span>
             </h2>
             <motion.div
-                variants={containerVariants}
-                initial='hidden'
-                whileInView='visible'
-                viewport={{ once: true, margin: '-100px' }}
-                className="grid grid-cols-1 border-t border-b border-gray-200/50 dark:border-zinc-800/50 w-full"
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              className="grid grid-cols-1 border-t border-b border-gray-200/50 dark:border-zinc-800/50 w-full"
             >
-                {certificate.map((cert, index) => (
-                    <motion.div
-                        key={cert.id}
-                        variants={itemVariants}
-                        className={`p-3 sm:p-4 flex flex-col justify-between group relative transition-colors duration-300 hover:bg-red-500/5 dark:hover:bg-red-500/10 ${index < certificate.length - 1 ? 'border-b' : ''} border-gray-200/50 dark:border-zinc-800/50`}
-                    >
-                        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                            <div className="flex items-start gap-3">
-                                <div className="p-2 rounded-xl bgred-500/10 text-red-600 dark:text-red-400 group-hover:scale-110 transition-transform duration-300 shrink-0">
-                                    <Award size={20} />
-                                </div>
-                                <div>
-                                    <h3 className="font-bold text-base text-gray-900 dark:text-white group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors">
-                                        {cert.title}
-                                    </h3>
-                                    <span className="text-sm font-medium text-gray-600 dark:text-zinc-400 block mt-0.5">
-                                        {cert.issuer}
-                                    </span>
-                                </div>
-                            </div>
-                        
-                            <div className="flex items-center justify-between sm:flex-col sm:items-end gap-1.5 shrink-0 max-sm:border-t max-sm:border-gray-100/50 max-sm:dark:border-zinc-700/30">
-                            <div className="flex align-items-lg-center gap-1.5 text-xs font-mono text-gray-600 dark:text-zinc-400">
-                                <Calendar size={11} />
-                                <span>{cert.date}</span>
-                            </div>
-                                <a href={cert.credentialUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs font-semibold text-green-600 dark:text-green-400 hover:underline">
-                                    Verity <ExternalLink />
-                                </a>
-                            </div>
-                        </div>
+              {certificate.map((cert, index) => (
+                <motion.div
+                  key={cert.id}
+                  variants={itemVariants}
+                  className={`p-3 sm:p-4 flex flex-col justify-between group relative transition-colors duration-300 hover:bg-red-500/5 dark:hover:bg-red-500/10 ${index < certificate.length - 1 ? "border-b" : ""} border-gray-200/50 dark:border-zinc-800/50`}
+                >
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                    <div className="flex items-start gap-3">
+                      <div className="p-2 rounded-xl bgred-500/10 text-red-600 dark:text-red-400 group-hover:scale-110 transition-transform duration-300 shrink-0">
+                        <Award size={20} />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-base text-gray-900 dark:text-white group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors">
+                          {cert.title}
+                        </h3>
+                        <span className="text-sm font-medium text-gray-600 dark:text-zinc-400 block mt-0.5">
+                          {cert.issuer}
+                        </span>
+                      </div>
+                    </div>
 
-                    </motion.div>
-                ))}
+                    <div className="flex items-center justify-between sm:flex-col sm:items-end gap-1.5 shrink-0 max-sm:border-t max-sm:border-gray-100/50 max-sm:dark:border-zinc-700/30">
+                      <div className="flex align-items-lg-center gap-1.5 text-xs font-mono text-gray-600 dark:text-zinc-400">
+                        <Calendar size={11} />
+                        <span>{cert.date}</span>
+                      </div>
+                      <a
+                        href={cert.credentialUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-xs font-semibold text-green-600 dark:text-green-400 hover:underline"
+                      >
+                        Vérité <ExternalLink />
+                      </a>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
             </motion.div>
           </div>
         </div>

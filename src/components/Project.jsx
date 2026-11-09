@@ -90,8 +90,8 @@ const Project = () => {
         <div className="flex flex-col sm-flex-row justify-between items-center mb-16 gap-4">
           <div className="text-center sm:text-left">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl mb-4 font-bold dark:text-white text-gray-900">
-              My{" "}
-              <span className="text-red-500 dark:text-red-400">Projects</span>
+              Mes{" "}
+              <span className="text-red-500 dark:text-red-400">Projets</span>
             </h2>
           </div>
           {/* Project buttons */}

@@ -44,12 +44,12 @@ const Hero = () => {
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-500/10 border border-red-500/20 mb-5">
               <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
               <span className="text-sm font-medium dark:text-red-300 text-gray-700">
-                Available for work
+                Disponible pour travailler
               </span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-3 dark:text-white text-gray-900">
               Bienvenue, je suis{" "}
-              <span className="text-red-600 dark:text-red-420">Danylex</span>
+              <span className="text-red-600 dark:text-red-420">UDOne</span>
             </h1>
             <h2 className="text-xl sm:text-2xl font-mono mb-4 dark:text-red-400 text-red-600">
               <span className="text-gray-400 dark:text-gray-500">&lt; </span>
@@ -57,15 +57,17 @@ const Hero = () => {
               <span className="text-gray-400 dark:text-gray-500"> &gt;</span>
             </h2>
             <p className="mb-6 leading-relaxed max-w-md lg:max-w-lg dark:text-gray-300 text-gray-700">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-              earum saepe corporis sequi fugiat.
+              UDOne est un développeur web, professionnel de l'informatique qui
+              s'occupe de la conception, du développement, du test et de la
+              maintenance de sites internet, d'applications en ligne ou de
+              plateformes numériques.
             </p>
             {/* Statistiques */}
             <div className="flex gap-8 mb-7">
               {[
-                { number: "2+", label: "Years Experience" },
-                { number: "15+", label: "Projects Done" },
-                { number: "10+", label: "Happy Clients" },
+                { number: "2+", label: "Années d’expérience" },
+                { number: "10+", label: "Projets réalisés" },
+                { number: "3+", label: "Clients satisfaits" },
               ].map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-2xl font-bold dark:text-white text-gray-900">
@@ -82,13 +84,13 @@ const Hero = () => {
               <a href={CV} download className="w-full sm:w-auto">
                 <button className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full border-2 dark:border-red-500 border-red-600 dark:text-white text-gray-800 font-semibold dark:hover: bg-red-500 hover:bg-red-600 to-red-800 hover:shadow-[0_0_40px_rgba(220,38,38,0.7)] transition-all duration-300 transform hover:scale-105">
                   <DownloadIcon size={18} />
-                  Download CV
+                  Télécharger le CV
                 </button>
               </a>
               <a href="#contact" className="w-full sm:w-auto">
                 <button className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full border-2 dark:border-red-500 border-red-600 dark:text-white text-gray-800 hover:text-white dark:hover:text-white font-semibold dark:hover:bg-red-500 hover:bg-red-600 hover:shadow-[0_0_40px_rgba(220,38,38,0.7)] transition-all duration-300 transform hover:scale-105">
                   <Mail size={18} />
-                  Hire Me
+                  Contactez-moi
                 </button>
               </a>
             </div>

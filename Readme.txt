@@ -78,3 +78,15 @@ HTML :
 4 - Framer-motion : npm i framer-motion
 
 
+
+/* ------------------ Git / GitHub -------------------------- */
+
+config : 
+
+-$ ssh-keygen -t rsa -b 4096 -C "udone.alexis@gmail.com"
+
+-$ git remote set-url  origin git@github.com:udonealexis-tech/udone-portfolio.git
+
+-$ git push -u origin master
+
+

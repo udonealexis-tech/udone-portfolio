@@ -39,21 +39,18 @@ const About = () => {
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-500/10 border border-red-500/20 mb-4">
             <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-            <span className="text-xs sm:text-sm font-semibold tracking-wider uppercase dark:text-red-400 text-red-600">
-              About Me
+            <span className="text-xs sm:text-sm font-semibold tracking-wider dark:text-red-400 text-red-600">
+              A Propos de moi
             </span>
           </div>
-          <h2 className="text-3xl sm-text-4xl lg:text-5xl font-bold mb-6 dark:text-white text-gray-900 leading-tight">
-            Turning Ideas Into
+          <h2 className="text-2xl sm-text-3xl lg:text-4xl font-bold mb-6 dark:text-white text-gray-900 leading-tight">
+            Transformer des idées en
             <span className="text-red-600 dark:text-red-400 block">
-              Digital Reality
+              Réalité numérique
             </span>
           </h2>
           <p className="text-base lg:text-lg mb-8 leading-relaxed dark:text-gray-300 text-gray-700 max-w-xl">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
-            fugiat accusamus nesciunt laboriosam doloremque dolor fuga ipsa,
-            nihil ratione et, mollitia recusandae ipsam excepturi illo sint
-            harum aliquam modi.
+            UDOne maîtrise à la fois le front-end et le back-end, lui permettant d'intervenir sur l'ensemble d'un projet.
           </p>
           <div className="flex gap-4 mb-8">
             {socialLinks.map((social, index) => {
@@ -74,26 +71,26 @@ const About = () => {
           </div>
           <a href="#contact" data-aos="fade-up" data-aos-delay="300">
             <button className="group inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full border-2 dark:border-red-500 border-red-600 dark:text-white text-gray-800 font-semibold dark:hover: bg-red-500 hover:bg-red-600 to-red-800 hover:shadow-[0_0_40px_rgba(220,38,38,0.7)] transition-all duration-300 transform hover:scale-105">
-              Let's Talk
+              Parlons-en
               <ArrowRight size={18} />
             </button>
           </a>
-          </div>
-          <div
-            className="relative order-1 lg:order-2 flex justify-center"
-            data-aos="fade-left"
-          >
-            <div className="relative w-full max-w-sm sm:max-w-md">
-              <div className="absolute inset-0 bg-linear-to-r from-red-600 to-red-800 rounded-[40%_60%_60%/40%_60%_70%] filter blur-xl opacity-40 animate-pulse" />
-              <div className="absolute inset-0 bg-linear-to-r from-red-600 to-red-800 rounded-[40%_60%_60%/40%_60%_70%] transform rotate-3 scale-105" />
-              <img
-                src={logo}
-                alt="About"
-                className="relative z-10 rounded-[40%_60%_60%/40%_60%_70%] shadow-2xl w-full h-auto object-cover border-2 border-red-500/30 backdrop-blur-sm"
-              />
-            </div>
+        </div>
+        <div
+          className="relative order-1 lg:order-2 flex justify-center"
+          data-aos="fade-left"
+        >
+          <div className="relative w-full max-w-sm sm:max-w-md">
+            <div className="absolute inset-0 bg-linear-to-r from-red-600 to-red-800 rounded-[40%_60%_60%/40%_60%_70%] filter blur-xl opacity-40 animate-pulse" />
+            <div className="absolute inset-0 bg-linear-to-r from-red-600 to-red-800 rounded-[40%_60%_60%/40%_60%_70%] transform rotate-3 scale-2" />
+            <img
+              src={logo}
+              alt="About"
+              className="relative z-10 rounded-[40%_60%_60%/40%_60%_70%] shadow-2xl w-full h-auto object-cover border-2 border-red-500/30 backdrop-blur-sm"
+            />
           </div>
         </div>
+      </div>
     </section>
   );
 }

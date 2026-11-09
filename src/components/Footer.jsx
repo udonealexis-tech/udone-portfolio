@@ -14,18 +14,19 @@ const Footer = () => {
           <p className="text-xs">Developpeur Web</p>
         </div>
         <div className="flex gap-4">
-          <a href="#" className='hover:text-red-500 transition-colors'>
+          <a href="#" className="hover:text-red-500 transition-colors">
             <FaGithub size={20} />
           </a>
-          <a href="#" className='hover:text-red-500 transition-colors'>
+          <a href="#" className="hover:text-red-500 transition-colors">
             <FaLinkedin size={20} />
           </a>
-          <a href="#" className='hover:text-red-500 transition-colors'>
+          <a href="#" className="hover:text-red-500 transition-colors">
             <FaTwitter size={20} />
           </a>
         </div>
         <p className="text-xs flex items-center gap-1">
-            {currentYear} Made with <FaHeart className="text-red-500" /> by <span className="font-semibold text-red-500">UDOne</span>
+          {currentYear} Réalisé avec <FaHeart className="text-red-500" /> par{" "}
+          <span className="font-semibold text-red-500">UDOne</span>
         </p>
       </div>
       <div className="h-24"></div>

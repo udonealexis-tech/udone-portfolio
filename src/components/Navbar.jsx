@@ -8,11 +8,11 @@ const Navbar = ({ darkMode, toggleDarkMode}) => {
     const [activeTab, setActiveTab] = useState('Home')
 
     const navItems = [
-      { name: "Home", link: "#home", icon: FaHome },
-      { name: "About", link: "#about", icon: FaUser },
-      { name: "Skills", link: "#skills", icon: FaCode },
-      { name: "Certificates", link: "#certificates", icon: FaCertificate },
-      { name: "Projects", link: "#projects", icon: FaProjectDiagram },
+      { name: "Accueil", link: "#home", icon: FaHome },
+      { name: "A Propos", link: "#about", icon: FaUser },
+      { name: "Compétences", link: "#skills", icon: FaCode },
+      { name: "Certificats", link: "#certificates", icon: FaCertificate },
+      { name: "Projets", link: "#projects", icon: FaProjectDiagram },
       { name: "Contact", link: "#contact", icon: FaEnvelope },
     ];
 
